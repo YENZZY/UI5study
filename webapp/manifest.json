@@ -6,17 +6,17 @@
 	"title": "{{appTitle}}",
 	"description": "{{appDescription}}",
 	"type": "application",
-	"applicationVersion": {
-	  "version": "1.0.0"
-	}
+    "applicationVersion": {
+      "version": "1.0.0"
+    }
   },
-  "sap.ui": {
-	"technology": "UI5",
-	"deviceTypes": {
-		"desktop": true,
-		"tablet": true,
-		"phone": true
-	}
+    "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
   },
   "sap.ui5": {
 	"dependencies": {
@@ -26,20 +26,27 @@
 		"sap.m": {}
 	  }
 	},
-	"models": {
-	  "i18n": {
-		"type": "sap.ui.model.resource.ResourceModel",
-		"settings": {
-		  "bundleName": "ui5.walkthrough.i18n.i18n",
-		  "supportedLocales": [""],
-		  "fallbackLocale": ""
-		}
+    "models": {
+      "i18n": {
+      "type": "sap.ui.model.resource.ResourceModel",
+      "settings": {
+        "bundleName": "ui5.walkthrough.i18n.i18n",
+        "supportedLocales": [""],
+        "fallbackLocale": ""
+      }
 	  }
 	},
-	"rootView": {
-		"viewName": "ui5.walkthrough.view.App",
-		"type": "XML",
-		"id": "app"
+    "rootView": {
+      "viewName": "ui5.walkthrough.view.App",
+      "type": "XML",
+      "id": "app"
+    }
+  },
+	"resources": {
+	  "css": [
+		{
+		  "uri": "css/style.css"
+		}
+	  ]
 	}
-  }
 }
